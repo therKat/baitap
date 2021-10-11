@@ -2,14 +2,15 @@
 .nav {
     background-color: var(--first-color);
     padding: 5px;
+    position: relative;
 }
+
 .nav__bar .nav__bar-name {
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap-reverse;
 }
-
 
 .nav__bar-name-img {
     margin-right: 5px;
@@ -60,7 +61,6 @@
     border: 2px solid var(--title-color-2);
 
 }
-
 /* ======= CONTENT 2 ============ */
 
 .content2 {
@@ -126,33 +126,29 @@
 
 .content3__item-not-main {
     width: 500px;
-    /* background-color: var(--black-color); */
     padding: 10px;
-    border-radius: 10px;
-    border: 5px solid var(--title-color-2);
-
 }
-
-
 
 /* ========== CONTENT 3 POP UP ========= */
 .content3__item-pop-up:hover .pop__up {
     display: block;
 }
 
+
 .pop__up {
     background-color: var(--black-color);
-    width: 590px;
+    width: 750px;
+    height: 550px;
     position: absolute;
-    left: 51%;
-    top: 5%;
-    padding: 10px;
+    left: 40%;
+    top: 0.1%;
+    padding: 30px;
     border-radius: 5px;
     display: none;
     animation: fadeIn ease-in 0.3s;
 
 
-    font-size: 1.8rem;
+    font-size: 2.0rem;
     line-height: 2.0rem;
     color: var(--white-color);
 
@@ -180,4 +176,32 @@
 
 .footer__contact-link {
    flex: 1;
+}
+
+
+
+/* ===== Responsive ========*/
+
+@media screen and (max-width: 1300px) {
+    .content {
+        padding: 50px 50px;    
+    }
+    .content2 {
+    padding: 50px 50px;    
+    }
+    .content3 {
+        padding: 50px 50px;    
+    }
+    .pop__up {
+        background-color: var(--black-color);
+        width: 550px;
+        max-height: 550px;
+        position: absolute;
+        left: 50%;
+        top: 0.1%;
+        padding: 30px;
+        display: none;
+        font-size: 1.3rem;
+        line-height: 1.8rem;       
+    }
 }
