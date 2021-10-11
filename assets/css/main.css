@@ -183,6 +183,9 @@
 /* ===== Responsive ========*/
 
 @media screen and (max-width: 1300px) {
+    .nav {
+        padding: 10px 40px;
+    }
     .content {
         padding: 50px 50px;    
     }
